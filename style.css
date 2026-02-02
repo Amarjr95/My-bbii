@@ -4,24 +4,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .card {
   background: white;
-  padding: 40px;
+  padding: 30px;
   border-radius: 20px;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   max-width: 400px;
 }
 
-h1 {
-  color: #ff4d6d;
+.photo {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
 }
 
-p {
-  font-size: 18px;
+h1 {
+  color: #ff4d6d;
 }
 
 .buttons {
@@ -29,10 +31,10 @@ p {
 }
 
 button {
-  padding: 10px 20px;
+  padding: 10px 22px;
   font-size: 16px;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
   margin: 10px;
 }
@@ -43,13 +45,12 @@ button {
 }
 
 #no {
-  background-color: #ccc;
-  position: relative;
+  background-color: #ddd;
 }
 
 #response {
-  margin-top: 20px;
+  margin-top: 25px;
   font-size: 20px;
-  color: #ff4d6d;
   font-weight: bold;
+  color: #ff4d6d;
 }
