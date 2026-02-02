@@ -10,12 +10,13 @@ body {
 
 .card {
   background: white;
-  padding: 25px;
+  padding: 30px;
   border-radius: 22px;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   max-width: 380px;
   width: 100%;
+  z-index: 2;
 }
 
 .photo {
@@ -24,62 +25,55 @@ body {
   margin-bottom: 15px;
 }
 
-h1 {
-  color: #ff4d6d;
-  font-size: 22px;
-}
-
-.question {
-  font-size: 18px;
-}
-
 .buttons {
   margin-top: 20px;
 }
 
-button {
+.btn {
+  display: inline-block;
   padding: 12px 22px;
   font-size: 16px;
-  border: none;
   border-radius: 14px;
-  cursor: pointer;
-  margin: 8px;
+  text-decoration: none;
+  margin: 10px;
 }
 
-#yes {
+.yes {
   background-color: #ff4d6d;
   color: white;
 }
 
-#no {
+.no {
   background-color: #ddd;
+  color: black;
 }
 
-#response {
+.secret {
   margin-top: 20px;
-  font-size: 20px;
-  font-weight: bold;
   color: #ff4d6d;
+  font-size: 18px;
 }
 
-#secret {
-  margin-top: 15px;
-  font-size: 16px;
-  color: #555;
-  display: none;
+/* 💖 Animation cœurs */
+.hearts::before {
+  content: "💖 💕 💘 💝 💞";
+  position: fixed;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  font-size: 30px;
+  animation: fall 6s linear infinite;
+  text-align: center;
 }
 
-/* 📱 Mobile encore plus cute */
+@keyframes fall {
+  0% { top: -10%; }
+  100% { top: 110%; }
+}
+
+/* 📱 Mobile */
 @media (max-width: 480px) {
-  h1 {
-    font-size: 20px;
-  }
-
-  .question {
-    font-size: 17px;
-  }
-
-  button {
+  .btn {
     width: 100%;
   }
 }
