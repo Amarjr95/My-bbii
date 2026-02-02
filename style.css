@@ -1,29 +1,36 @@
 body {
   background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
 .card {
   background: white;
-  padding: 30px;
-  border-radius: 20px;
+  padding: 25px;
+  border-radius: 22px;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  max-width: 400px;
+  max-width: 380px;
+  width: 100%;
 }
 
 .photo {
   width: 100%;
-  border-radius: 15px;
-  margin-bottom: 20px;
+  border-radius: 16px;
+  margin-bottom: 15px;
 }
 
 h1 {
   color: #ff4d6d;
+  font-size: 22px;
+}
+
+.question {
+  font-size: 18px;
 }
 
 .buttons {
@@ -31,12 +38,12 @@ h1 {
 }
 
 button {
-  padding: 10px 22px;
+  padding: 12px 22px;
   font-size: 16px;
   border: none;
-  border-radius: 12px;
+  border-radius: 14px;
   cursor: pointer;
-  margin: 10px;
+  margin: 8px;
 }
 
 #yes {
@@ -49,8 +56,30 @@ button {
 }
 
 #response {
-  margin-top: 25px;
+  margin-top: 20px;
   font-size: 20px;
   font-weight: bold;
   color: #ff4d6d;
+}
+
+#secret {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #555;
+  display: none;
+}
+
+/* 📱 Mobile encore plus cute */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .question {
+    font-size: 17px;
+  }
+
+  button {
+    width: 100%;
+  }
 }
